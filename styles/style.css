@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+/* DO NOT EDIT ABOVE THIS LINE */
+
+
+
+
+/* Style the body */
+body {
+
+}
+
+
+/* Header/logo Title */
+.header {
+  background-color: red;
+  background-image: url(../images/header_img.jpg);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  background-color: white;
+  margin: 0;
+  padding: 0 488px;
+
+}
+.header p {
+  background-color: white;
+  margin: 0;
+  padding: 0 600px;
+}
+
+
+
+
+/* Column container */
+
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+
+.side {
+  float: left;
+  padding: 10px;
+  height: 1000px; 
+
+  background-color: rgb(235, 232, 232);
+  width: 25%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 130px;
+}
+
+
+/* Main column */
+.main {
+  float: left;
+  padding: 10px;
+  height: 1000px; 
+
+  /* background-color: purple; */
+  width: 75%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero image, just for this example */
+div .hero-card {
+  background-image: url(../images/header_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border: 2px solid black;
+  border-radius: 12px;
+  width: 17vw;
+  padding: 0 20px;
+  margin: 5px;
+  height: fit-content;
+  font-family: 'Luckiest Guy', cursive;
+
+  font-weight: bold;
+  font-size: 20px;
+
+  color: black;
+  -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; 
+
+}
+
+.heroImg {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* DO NOT EDIT BELOW THIS LINE */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .hero-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+}
